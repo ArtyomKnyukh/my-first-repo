@@ -1,7 +1,7 @@
 import { test, expect } from "@playwright/test";
 import BookingBuilder from "../data/BookingBuilder";
 
-test.describe("API-tests for Restful-booker", () => {
+test.describe("API-tests for Restful-booker", { tag: ['@api'] }, () => {
   //для последовательного запуска тестов(чтобы можно было запомнить айди букинга и токен авторизации)
   test.describe.configure({ mode: "serial" });
 

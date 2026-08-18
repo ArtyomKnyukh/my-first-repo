@@ -6,7 +6,7 @@ import { ClientInformationPage } from '../pages/client.information.page';
 import { CheckoutOverviewPage } from '../pages/checkout.overview.page';
 import { CheckoutCompletePage } from '../pages/checkout.complete.page';
 
-test('testing e2e scenario(buying cycle for a user)', async ({ page }) => {
+test('testing e2e scenario(buying cycle for a user)', { tag: ['@ui'] }, async ({ page }) => {
   const loginPage = new LoginPage(page);
   const inventoryPage = new InventoryPage(page);
   const cartPage = new CartPage(page);
